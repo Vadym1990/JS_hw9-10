@@ -33,7 +33,8 @@ for (let i = 0; i < test.length; i++) {
     let count = i + 1;
     let totalQst = 4;
 
-    let userQst = confirm(`Question ${count} of ${totalQst}:` + '\n' + '\n' + test[i].qst + '\n' +
+
+    let userQst = confirm(`Question ${count} of ${totalQst}: (Points for question: ${test[i].points})` + '\n' + '\n' + test[i].qst + '\n' +
         'Press "OK" if true and "Отмена" or "Esc" if false' + '\n' + '\n' +
         `Total points: ${totalCurPoints} of ${totalPoints}`);
 
