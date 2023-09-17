@@ -43,4 +43,4 @@ for (let i = 0; i < test.length; i++) {
     }
 }
 
-alert(`Your total points is: ${totalCurPoints}`)
+alert(`Your total points is: ${totalCurPoints} of ${totalPoints}`)
