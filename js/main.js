@@ -48,5 +48,16 @@ for (let i = 0; i < test.length; i++) {
         totalCurPoints = totalCurPoints + test[i].points;
     }
 }
+// Перевод в 12-бальную систему
 
-alert(`Your total points is: ${totalCurPoints} of ${totalPoints}`)
+let point12 = totalCurPoints / (totalPoints / 12);
+point12 = Math.round(point12);
+
+alert(
+    `Your total points is: ${totalCurPoints} of ${totalPoints}` + '\n' +
+    `On 12-point system: ${point12}`
+);
+
+
+
+
