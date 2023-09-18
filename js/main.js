@@ -18,23 +18,29 @@ let test = [
         qst: 'Capital of Italy - Rome',
         ans: true,
         points: 3
+    },
+    {
+        qst: 'Capital of USA - Washington',
+        ans: true,
+        points: 6
     }
 ];
 
 let totalPoints = 0;
 let totalCurPoints = 0;
+let totalQst = 0;
 
 for (let i = 0; i < test.length; i++) {
-    totalPoints = totalPoints + test[i].points
+    totalPoints = totalPoints + test[i].points;
+    totalQst++;
 }
 
 for (let i = 0; i < test.length; i++) {
 
     let count = i + 1;
-    let totalQst = 4;
 
-
-    let userQst = confirm(`Question ${count} of ${totalQst}: (Points for question: ${test[i].points})` + '\n' + '\n' + test[i].qst + '\n' +
+    let userQst = confirm(`Question ${count} of ${totalQst}: (Points for question: ${test[i].points})` + '\n' + '\n' +
+        test[i].qst + '\n' +
         'Press "OK" if true and "Отмена" or "Esc" if false' + '\n' + '\n' +
         `Total points: ${totalCurPoints} of ${totalPoints}`);
 
